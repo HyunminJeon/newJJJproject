@@ -13,5 +13,5 @@ public class SharedPreferenceManager{
     private static String LOGIN = "login";
     private static SharedPreferenceManager spf = null;
     private static SharedPreferences.Editor loginEditor; // 데이터 기록을 위해서 SharedPreferences.Editor instance를 얻는다. 우리는 로그인을 위함이니, loginEditor!
-
+    private int aaa;
 }
