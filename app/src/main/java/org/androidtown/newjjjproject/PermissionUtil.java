@@ -17,14 +17,12 @@ public class PermissionUtil {
     private final int REQ_CODE;
     private final String[] permissions;
 
-
     //생성자
     public PermissionUtil(int REQ_CODE, String[] permissions)
     {
         this.REQ_CODE = REQ_CODE;
         this.permissions = permissions;
     }
-
 
     //버전 체크 후 권한 요청(마시맬로우 버전 이후부터는 한 번 더 체크해야함)
     public void check(Activity activity, IPermissionGrant pGrant)
@@ -54,14 +52,12 @@ public class PermissionUtil {
         if (requires1.size()>0) //권한이 안됬을 경우
         {
             String[] requires2 = new String[requires1.size()];
-
             requires2=requires1.toArray(requires2);
             activity.requestPermissions(requires2, REQ_CODE);
         }
         else
             pGrant.run();
     }
-
 
     public boolean afterPermissionUtil(int requestCode, int[] grantResult, IPermissionGrant pGrant)
     {
@@ -86,14 +82,10 @@ public class PermissionUtil {
         return false;
     }
 
-
-
     //인터페이스 선언
     public interface IPermissionGrant
     {
         void run();
         void fail();
     }
-
-
 }
