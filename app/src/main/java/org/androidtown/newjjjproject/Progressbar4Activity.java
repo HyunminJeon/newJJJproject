@@ -39,27 +39,27 @@ public class Progressbar4Activity extends AppCompatActivity {
     }
 
     public void btn_design1(View v){
-        progressBar4.setProgress(30);
+        progressBar4.setProgress(45);
     }
 
     public void btn_design2(View v){
-        progressBar4.setProgress(30);
+        progressBar4.setProgress(45);
     }
 
     public void btn_design3(View v){
-        progressBar4.setProgress(30);
+        progressBar4.setProgress(45);
     }
 
     public void btn_design4(View v){
-        progressBar4.setProgress(30);
+        progressBar4.setProgress(45);
     }
 
     public void btn_design5(View v){
-        progressBar4.setProgress(30);
+        progressBar4.setProgress(45);
     }
 
     public void btn_design6(View v){
-        progressBar4.setProgress(30);
+        progressBar4.setProgress(45);
     }
 
     public void back2(View v) {
