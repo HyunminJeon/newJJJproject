@@ -1,7 +1,7 @@
 package org.androidtown.newjjjproject;
 
-import android.content.Context;
-import android.content.SharedPreferences;
+        import android.content.Context;
+        import android.content.SharedPreferences;
 
 /**
  * Created by Jeon Hyunmin on 2018-03-19.
@@ -25,13 +25,13 @@ public class SharedPreferenceManager{
     }
     private Context context;
     // private static SharedPreferences.Editor loginEditor; // 데이터 기록을 위해서 SharedPreferences.Editor instance를 얻는다. 우리는 로그인을 위함이니, loginEditor!
-            public static SharedPreferenceManager getInstance() {
-                if(spf == null) {
-                    spf = new SharedPreferenceManager();
-                    return spf;
-                }
-                return spf;
-            }
+    public static SharedPreferenceManager getInstance() {
+        if(spf == null) {
+            spf = new SharedPreferenceManager();
+            return spf;
+        }
+        return spf;
+    }
 
     public void setId(String id){ // set 은 return 값이 없어도 되니까 void..! 그러나 void 썼으니 앞에 String 못하니까 ()에 넣기.
         loginEditor.putString("id", id); // 앞에 것이 Key 값. 즉 id 라는 key값에 id 값 넣기. 이걸 loginEditor에 put 하는 것.
