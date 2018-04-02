@@ -19,11 +19,13 @@ public class Progressbar4Activity extends AppCompatActivity {
     private Button btn_design5;
     private Button btn_design6;
     private ImageButton imgbtn_back4;
-
+    private ImageButton imgbtn_back2;
+  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_progressbar4);
+        setContentView(R.layout.activity_progressbar3);
         initView();
     }
 
@@ -66,5 +68,6 @@ public class Progressbar4Activity extends AppCompatActivity {
     public void back4(View v) {
         Intent intent = new Intent(this, Progressbar3Activity.class);
         startActivity(intent);
+        imgbtn_back2 = findViewById(R.id.imgbtn_back2);
     }
 }

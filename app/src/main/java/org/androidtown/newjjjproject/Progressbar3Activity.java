@@ -1,5 +1,6 @@
 package org.androidtown.newjjjproject;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
 
     public class Progressbar3Activity extends AppCompatActivity {
         private ProgressBar progressBar3;
