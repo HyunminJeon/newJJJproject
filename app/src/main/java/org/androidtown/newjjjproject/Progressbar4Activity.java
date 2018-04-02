@@ -1,5 +1,6 @@
 package org.androidtown.newjjjproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -17,11 +18,13 @@ public class Progressbar4Activity extends AppCompatActivity {
     private Button btn_design4;
     private Button btn_design5;
     private Button btn_design6;
+    private ImageButton imgbtn_back4;
     private ImageButton imgbtn_back2;
-
+  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_progressbar4);
         setContentView(R.layout.activity_progressbar3);
         initView();
     }
@@ -35,33 +38,36 @@ public class Progressbar4Activity extends AppCompatActivity {
         btn_design4 = findViewById(R.id.btn_design4);
         btn_design5 = findViewById(R.id.btn_design5);
         btn_design6 = findViewById(R.id.btn_design6);
+        imgbtn_back4 = findViewById(R.id.imgbtn_back4);
+    }
+
+    public void btn_design1(View v) {
+        progressBar4.setProgress(100);
+    }
+
+    public void btn_design2(View v) {
+        progressBar4.setProgress(100);
+    }
+
+    public void btn_design3(View v) {
+        progressBar4.setProgress(100);
+    }
+
+    public void btn_design4(View v) {
+        progressBar4.setProgress(100);
+    }
+
+    public void btn_design5(View v) {
+        progressBar4.setProgress(100);
+    }
+
+    public void btn_design6(View v) {
+        progressBar4.setProgress(100);
+    }
+
+    public void back4(View v) {
+        Intent intent = new Intent(this, Progressbar3Activity.class);
+        startActivity(intent);
         imgbtn_back2 = findViewById(R.id.imgbtn_back2);
-    }
-
-    public void btn_design1(View v){
-        progressBar4.setProgress(30);
-    }
-
-    public void btn_design2(View v){
-        progressBar4.setProgress(30);
-    }
-
-    public void btn_design3(View v){
-        progressBar4.setProgress(30);
-    }
-
-    public void btn_design4(View v){
-        progressBar4.setProgress(30);
-    }
-
-    public void btn_design5(View v){
-        progressBar4.setProgress(30);
-    }
-
-    public void btn_design6(View v){
-        progressBar4.setProgress(30);
-    }
-
-    public void back2(View v) {
     }
 }

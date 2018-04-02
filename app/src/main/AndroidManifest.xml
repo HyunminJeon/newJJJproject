@@ -19,16 +19,15 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ProfileActivity" />
-<<<<<<< HEAD
+        <activity android:name=".Progressbar1Activity" />
+        <activity android:name=".Progressbar2Activity" />
+        <activity android:name=".Progressbar3Activity" />
+        <activity android:name=".Progressbar4Activity"></activity>
         <activity android:name=".HomeActivity" />
         <activity android:name=".FirstFragment" />
         <activity android:name=".SecondFragment" />
         <activity android:name=".ThirdFragment" />
         <activity android:name=".FourthFragment"></activity>
-=======
-        <activity android:name=".Progressbar3Activity" />
-        <activity android:name=".Progressbar4Activity"></activity>
->>>>>>> #11
     </application>
 
 </manifest>
