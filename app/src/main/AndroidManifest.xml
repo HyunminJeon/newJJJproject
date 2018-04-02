@@ -19,6 +19,8 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ProfileActivity" />
+        <activity android:name=".Progressbar1Activity" />
+        <activity android:name=".Progressbar2Activity" />
         <activity android:name=".Progressbar3Activity" />
         <activity android:name=".Progressbar4Activity"></activity>
     </application>
