@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -39,7 +40,8 @@ public class HomeActivity extends AppCompatActivity {
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
 
-    public void start()
+
+    public void start(View v)
     {
         Intent intent = new Intent(this, Progressbar1Activity.class);
         startActivity(intent);
