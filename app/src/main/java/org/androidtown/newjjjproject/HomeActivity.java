@@ -1,5 +1,6 @@
 package org.androidtown.newjjjproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -31,7 +32,6 @@ public class HomeActivity extends AppCompatActivity {
         viewPager.setAdapter(customAdapter);
     }
 
-
     public void setListener()
     {
         //탭 버튼을 눌렀을 때 뷰 페이저 바꾸기
@@ -39,6 +39,10 @@ public class HomeActivity extends AppCompatActivity {
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
 
-
+    public void start()
+    {
+        Intent intent = new Intent(this, Progressbar1Activity.class);
+        startActivity(intent);
+    }
 
 }

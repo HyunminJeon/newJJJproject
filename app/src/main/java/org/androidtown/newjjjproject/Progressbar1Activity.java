@@ -1,5 +1,6 @@
 package org.androidtown.newjjjproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -36,28 +37,34 @@ public class Progressbar1Activity extends AppCompatActivity {
         imgbtn_back1 = findViewById(R.id.imgbtn_back1);
     }
 
-    public void btn_use1(View v){
-        progressBar1.setProgress(25);
-    }
-
-    public void btn_use2(View v){
-        progressBar1.setProgress(25);
-    }
-
-    public void btn_use3(View v){
-        progressBar1.setProgress(25);
-    }
-
-    public void btn_use4(View v){
-        progressBar1.setProgress(25);
-    }
-
-    public void btn_use5(View v){
-        progressBar1.setProgress(25);
-    }
+//    public void btn_use1(View v){
+//        progressBar1.setProgress(25);
+//    }
+//
+//    public void btn_use2(View v){
+//        progressBar1.setProgress(25);
+//    }
+//
+//    public void btn_use3(View v){
+//        progressBar1.setProgress(25);
+//    }
+//
+//    public void btn_use4(View v){
+//        progressBar1.setProgress(25);
+//    }
+//
+//    public void btn_use5(View v){
+//        progressBar1.setProgress(25);
+//    }
 
     public void back1(View view){
-//        Intent intent = new Intent(this, Progressbar3Activity.class);
-//        startActivity(intent); 은주언니 화면 인텐트하기(home)
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void front1(View view){
+        Intent intent = new Intent(this, Progressbar2Activity.class);
+        startActivity(intent);
+        progressBar1.setProgress(25);
     }
 }

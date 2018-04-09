@@ -41,32 +41,38 @@ import android.widget.TextView;
             imgbtn_back3 = findViewById(R.id.imgbtn_back3);
         }
 
-        public void btn_weight1(View v) {
-            progressBar3.setProgress(75);
-        }
-
-        public void btn_weight2(View v) {
-            progressBar3.setProgress(75);
-        }
-
-        public void btn_weight3(View v) {
-            progressBar3.setProgress(75);
-        }
-
-        public void btn_weight4(View v) {
-            progressBar3.setProgress(75);
-        }
-
-        public void btn_weight5(View v) {
-            progressBar3.setProgress(75);
-        }
-
-        public void btn_weight6(View v) {
-            progressBar3.setProgress(75);
-        }
+//        public void btn_weight1(View v) {
+//            progressBar3.setProgress(75);
+//        }
+//
+//        public void btn_weight2(View v) {
+//            progressBar3.setProgress(75);
+//        }
+//
+//        public void btn_weight3(View v) {
+//            progressBar3.setProgress(75);
+//        }
+//
+//        public void btn_weight4(View v) {
+//            progressBar3.setProgress(75);
+//        }
+//
+//        public void btn_weight5(View v) {
+//            progressBar3.setProgress(75);
+//        }
+//
+//        public void btn_weight6(View v) {
+//            progressBar3.setProgress(75);
+//        }
 
         public void back3(View v) {
             Intent intent = new Intent(this, Progressbar2Activity.class);
             startActivity(intent);
+        }
+
+        public void front3(View view){
+            Intent intent = new Intent(this, Progressbar4Activity.class);
+            startActivity(intent);
+            progressBar3.setProgress(75);
         }
     }

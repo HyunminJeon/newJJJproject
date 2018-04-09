@@ -41,33 +41,39 @@ public class Progressbar4Activity extends AppCompatActivity {
         imgbtn_back4 = findViewById(R.id.imgbtn_back4);
     }
 
-    public void btn_design1(View v) {
-        progressBar4.setProgress(100);
-    }
-
-    public void btn_design2(View v) {
-        progressBar4.setProgress(100);
-    }
-
-    public void btn_design3(View v) {
-        progressBar4.setProgress(100);
-    }
-
-    public void btn_design4(View v) {
-        progressBar4.setProgress(100);
-    }
-
-    public void btn_design5(View v) {
-        progressBar4.setProgress(100);
-    }
-
-    public void btn_design6(View v) {
-        progressBar4.setProgress(100);
-    }
+//    public void btn_design1(View v) {
+//        progressBar4.setProgress(100);
+//    }
+//
+//    public void btn_design2(View v) {
+//        progressBar4.setProgress(100);
+//    }
+//
+//    public void btn_design3(View v) {
+//        progressBar4.setProgress(100);
+//    }
+//
+//    public void btn_design4(View v) {
+//        progressBar4.setProgress(100);
+//    }
+//
+//    public void btn_design5(View v) {
+//        progressBar4.setProgress(100);
+//    }
+//
+//    public void btn_design6(View v) {
+//        progressBar4.setProgress(100);
+//    }
 
     public void back4(View v) {
         Intent intent = new Intent(this, Progressbar3Activity.class);
         startActivity(intent);
         imgbtn_back2 = findViewById(R.id.imgbtn_back2);
+    }
+
+    public void front4(View view){
+        Intent intent = new Intent(this, Progressbar4Activity.class); // 노트북 결과 나오는 화면 나중에 intent!!
+        startActivity(intent);
+        progressBar4.setProgress(100);
     }
 }

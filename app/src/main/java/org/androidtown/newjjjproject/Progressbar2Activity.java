@@ -39,32 +39,38 @@ public class Progressbar2Activity extends AppCompatActivity {
         imgbtn_back2 = findViewById(R.id.imgbtn_back2);
     }
 
-    public void btn_price1(View v){
-        progressBar2.setProgress(50);
-    }
-
-    public void btn_price2(View v){
-        progressBar2.setProgress(50);
-    }
-
-    public void btn_price3(View v){
-        progressBar2.setProgress(50);
-    }
-
-    public void btn_price4(View v){
-        progressBar2.setProgress(50);
-    }
-
-    public void btn_price5(View v){
-        progressBar2.setProgress(50);
-    }
-
-    public void btn_price6(View v){
-        progressBar2.setProgress(50);
-    }
+//    public void btn_price1(View v){
+//        progressBar2.setProgress(50);
+//    }
+//
+//    public void btn_price2(View v){
+//        progressBar2.setProgress(50);
+//    }
+//
+//    public void btn_price3(View v){
+//        progressBar2.setProgress(50);
+//    }
+//
+//    public void btn_price4(View v){
+//        progressBar2.setProgress(50);
+//    }
+//
+//    public void btn_price5(View v){
+//        progressBar2.setProgress(50);
+//    }
+//
+//    public void btn_price6(View v){
+//        progressBar2.setProgress(50);
+//    }
 
     public void back2(View view){
         Intent intent = new Intent(this, Progressbar1Activity.class);
         startActivity(intent);
+    }
+
+    public void front2(View view){
+        Intent intent = new Intent(this, Progressbar3Activity.class);
+        startActivity(intent);
+        progressBar2.setProgress(50);
     }
 }
