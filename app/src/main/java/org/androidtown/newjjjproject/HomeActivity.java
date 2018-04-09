@@ -41,15 +41,4 @@ public class HomeActivity extends AppCompatActivity {
 
 
 
-
-
-
-
-    public void start()
-    {
-        //Intent intent = new Intent(this, );
-        //startActivity(intent);
-    }
-
-
 }
