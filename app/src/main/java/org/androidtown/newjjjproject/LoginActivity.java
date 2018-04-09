@@ -138,4 +138,11 @@ public class LoginActivity extends AppCompatActivity {
         Matcher matcher = pattern.matcher(s);
         return matcher.matches();
     }
+
+    //Add Profile Activity 로 전환
+    public void home(View v) {
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
+
 }

@@ -111,27 +111,33 @@
 
     <ImageView
         android:id="@+id/img_email"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:visibility="invisible"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/edit_email"
         app:layout_constraintEnd_toEndOf="@+id/edit_email"
-        app:layout_constraintTop_toTopOf="@+id/edit_email"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@drawable/img_warning" />
 
     <ImageView
         android:id="@+id/img_pw"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:visibility="invisible"
+        android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/edit_pw"
         app:layout_constraintEnd_toEndOf="@+id/edit_pw"
-        app:layout_constraintTop_toTopOf="@+id/edit_pw"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@drawable/img_warning" />
+
+    <ImageView
+        android:id="@+id/img_checkPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_checkPw"
+        app:layout_constraintEnd_toEndOf="@+id/edit_checkPw"
+        app:srcCompat="@drawable/img_warning" />
 
 
 </android.support.constraint.ConstraintLayout>

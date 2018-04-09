@@ -25,6 +25,7 @@ public class SignUpActivity extends AppCompatActivity {
     private Button btn_addProfile;
     private ImageView img_email;
     private ImageView img_pw;
+    private ImageView img_checkPw;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,15 +36,15 @@ public class SignUpActivity extends AppCompatActivity {
         initListener();
     }
 
-    private void initView()
-    {
-        edit_email = (EditText) findViewById(R.id.edit_email);
-        edit_pw = (EditText) findViewById(R.id.edit_pw);
-        edit_checkPw = (EditText) findViewById(R.id.edit_checkPw);
-        btn_singIn = (Button) findViewById(R.id.btn_singIn);
-        btn_addProfile = (Button) findViewById(R.id.btn_addProfile);
-        img_email = (ImageView) findViewById(R.id.img_email);
-        img_pw = (ImageView) findViewById(R.id.img_pw);
+    private void initView() {
+        edit_email = findViewById(R.id.edit_email);
+        edit_pw = findViewById(R.id.edit_pw);
+        edit_checkPw = findViewById(R.id.edit_checkPw);
+        btn_singIn = findViewById(R.id.btn_singIn);
+        btn_addProfile =  findViewById(R.id.btn_addProfile);
+        img_email = findViewById(R.id.img_email);
+        img_pw = findViewById(R.id.img_pw);
+        img_checkPw = findViewById(R.id.img_checkPw);
     }
 
     private void initListener() {
@@ -111,7 +112,39 @@ public class SignUpActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+
+        //비밀번호체크
+        edit_checkPw.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if(editable.toString().equals(edit_pw.getText().toString()))
+                {
+                    img_checkPw.setVisibility(View.INVISIBLE);
+                    checkPw=true;
+                    enableLogin(email, pw, checkPw);
+                }
+                else
+                {
+                    img_checkPw.setVisibility(View.VISIBLE);
+                    checkPw=false;
+                    enableLogin(email, pw, checkPw);
+                }
+            }
+        });
     }
+
 
     //enableLogin 메소드 선언
     private void enableLogin(boolean email, boolean pw, boolean checkPw) {
@@ -141,7 +174,7 @@ public class SignUpActivity extends AppCompatActivity {
 
     //SignIp Activity 로 전환
     public void signIn(View v) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 
