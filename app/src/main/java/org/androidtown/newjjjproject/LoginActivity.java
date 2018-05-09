@@ -123,7 +123,7 @@ public class LoginActivity extends AppCompatActivity {
             btn_enter.setEnabled(false);
     }
 
-    public void login(View v) { // id = pw이면 로그인, 그래서 창이 MainActivity로 넘어가게 해주는 함수..!
+    /*public void login(View v) { // id = pw이면 로그인, 그래서 창이 MainActivity로 넘어가게 해주는 함수..!
         boolean id = edit_id.getText().toString().equals(SharedPreferenceManager.getInstance().getId());
         boolean pw = edit_pw.getText().toString().equals(SharedPreferenceManager.getInstance().getPw());
         if (id && pw == true) {
@@ -131,6 +131,8 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+    */
+
 
     private boolean checkPassword(String s){
         String Password_PATTERN = "^(?=.*[a-zA-Z]+)(?=.*[0-9]+).{8,16}$";

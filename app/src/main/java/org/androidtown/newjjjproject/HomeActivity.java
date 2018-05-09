@@ -1,14 +1,11 @@
 package org.androidtown.newjjjproject;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 
 public class HomeActivity extends AppCompatActivity {
-
     ViewPager viewPager;
     TabLayout tabLayout;
 
@@ -41,10 +38,5 @@ public class HomeActivity extends AppCompatActivity {
     }
 
 
-    public void start(View v)
-    {
-        Intent intent = new Intent(this, Progressbar1Activity.class);
-        startActivity(intent);
-    }
 
 }

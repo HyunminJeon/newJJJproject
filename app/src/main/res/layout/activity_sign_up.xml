@@ -70,6 +70,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textSize="18sp"
+        android:password="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -81,6 +82,7 @@
         android:ems="10"
         android:hint="영문, 숫자 혼합하여 8자리 이상 입력하시오"
         android:inputType="textPersonName"
+        android:password="true"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -115,6 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/edit_email"
         app:layout_constraintEnd_toEndOf="@+id/edit_email"
         app:srcCompat="@drawable/img_warning" />
@@ -125,6 +128,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/edit_pw"
         app:layout_constraintEnd_toEndOf="@+id/edit_pw"
         app:srcCompat="@drawable/img_warning" />
@@ -135,6 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/edit_checkPw"
         app:layout_constraintEnd_toEndOf="@+id/edit_checkPw"
         app:srcCompat="@drawable/img_warning" />

@@ -18,7 +18,7 @@ public class SecondFragment extends android.support.v4.app.Fragment{
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         //activity_first_fragment 를 인플레이트해 (엑티비티가 아님)
-        View view = inflater.inflate(R.layout.activity_first_fragment, container, false);
+        View view = inflater.inflate(R.layout.activity_second_fragment, container, false);
         return view;
     }
 }
