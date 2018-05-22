@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="org.androidtown.newjjjproject.Fragment.SecondFragment">
 
+<<<<<<< HEAD
     <EditText
         android:id="@+id/edit_modelName"
         android:layout_width="0dp"
@@ -45,3 +46,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
+=======
+        <ListView
+            android:id="@+id/list_board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
+>>>>>>> 04028cb4be67af8a8b0a466f727c5741e161aa49

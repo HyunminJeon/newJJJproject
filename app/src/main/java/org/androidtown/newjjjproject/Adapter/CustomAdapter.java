@@ -29,7 +29,7 @@ public class CustomAdapter extends FragmentStatePagerAdapter {
             case  0:
                 return new FirstFragment();
             case 1:
-                return new ThirdFragment();
+                return new SecondFragment();
             case 2:
                 return new ThirdFragment();
             case 3:

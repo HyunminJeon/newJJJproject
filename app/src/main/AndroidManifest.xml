@@ -24,6 +24,11 @@
         <activity android:name=".Progressbar3Activity" />
         <activity android:name=".Progressbar4Activity" />
         <activity android:name=".HomeActivity" />
+        <activity android:name=".A" />
+        <activity android:name=".ProgrammingBoardActivity" />
+        <activity android:name=".DesignBoardActivity" />
+        <activity android:name=".GameBoardActivity" />
+        <activity android:name=".FreeBoardActivity" />
     </application>
 
 </manifest>
