@@ -19,6 +19,7 @@ public class Progressbar2Activity extends AppCompatActivity {
     private Button btn_price5;
     private Button btn_price6;
     private ImageButton imgbtn_back2;
+    private ImageButton imgbtn_front2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,40 +38,44 @@ public class Progressbar2Activity extends AppCompatActivity {
         btn_price5 = findViewById(R.id.btn_price5);
         btn_price6 = findViewById(R.id.btn_price6);
         imgbtn_back2 = findViewById(R.id.imgbtn_back2);
+        imgbtn_front2 = findViewById(R.id.imgbtn_front2);
     }
 
-//    public void btn_price1(View v){
-//        progressBar2.setProgress(50);
-//    }
-//
-//    public void btn_price2(View v){
-//        progressBar2.setProgress(50);
-//    }
-//
-//    public void btn_price3(View v){
-//        progressBar2.setProgress(50);
-//    }
-//
-//    public void btn_price4(View v){
-//        progressBar2.setProgress(50);
-//    }
-//
-//    public void btn_price5(View v){
-//        progressBar2.setProgress(50);
-//    }
-//
-//    public void btn_price6(View v){
-//        progressBar2.setProgress(50);
-//    }
+    public void btn_price1(View v){
+        progressBar2.setProgress(50);
+    }
+
+    public void btn_price2(View v){
+        progressBar2.setProgress(50);
+    }
+
+    public void btn_price3(View v){
+        progressBar2.setProgress(50);
+    }
+
+    public void btn_price4(View v){
+        progressBar2.setProgress(50);
+    }
+
+    public void btn_price5(View v){
+        progressBar2.setProgress(50);
+    }
+
+    public void btn_price6(View v){
+        progressBar2.setProgress(50);
+    }
 
     public void back2(View view){
         Intent intent = new Intent(this, Progressbar1Activity.class);
         startActivity(intent);
+
     }
 
     public void front2(View view){
         Intent intent = new Intent(this, Progressbar3Activity.class);
         startActivity(intent);
-        progressBar2.setProgress(50);
+        //progressBar2.setProgress(50);
+
+
     }
 }
