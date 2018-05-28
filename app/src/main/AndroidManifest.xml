@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"/>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".Progressbar1Activity" />
@@ -24,6 +24,11 @@
         <activity android:name=".Progressbar3Activity" />
         <activity android:name=".Progressbar4Activity" />
         <activity android:name=".HomeActivity" />
+        <activity android:name=".A" />
+        <activity android:name=".ProgrammingBoardActivity" />
+        <activity android:name=".DesignBoardActivity" />
+        <activity android:name=".GameBoardActivity" />
+        <activity android:name=".FreeBoardActivity" />
     </application>
 
 </manifest>
