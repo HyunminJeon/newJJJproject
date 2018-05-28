@@ -7,6 +7,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import java.util.ArrayList;
+<<<<<<< HEAD
+=======
+
+import org.androidtown.newjjjproject.Adapter.CustomAdapter;
+>>>>>>> 67838725c2e764794940db54812fd9892a6295f3
 
 public class HomeActivity extends AppCompatActivity {
     ViewPager viewPager;

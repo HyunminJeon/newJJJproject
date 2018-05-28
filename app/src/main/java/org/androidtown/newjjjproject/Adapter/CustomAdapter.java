@@ -1,8 +1,12 @@
-package org.androidtown.newjjjproject;
+package org.androidtown.newjjjproject.Adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+
+import org.androidtown.newjjjproject.Fragment.FirstFragment;
+import org.androidtown.newjjjproject.Fragment.FourthFragment;
+import org.androidtown.newjjjproject.Fragment.ThirdFragment;
 
 /**
  * Created by jikur on 2018-03-26.

@@ -1,10 +1,12 @@
-package org.androidtown.newjjjproject;
+package org.androidtown.newjjjproject.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import org.androidtown.newjjjproject.R;
 
 public class ThirdFragment extends android.support.v4.app.Fragment {
 
